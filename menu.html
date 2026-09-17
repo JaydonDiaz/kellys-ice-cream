@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Kelly's Homemade Ice Cream</title>
+  <meta name="description" content="Browse Kelly's Homemade Ice Cream's signature flavors and originals — over 100 recipes made fresh in Central Florida, plus non-dairy and sorbet options.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700&family=Caveat:wght@600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo-pink.png" alt="Kelly's Homemade Ice Cream"></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="story.html" class="nav-link">Our Story</a>
+      <a href="locations.html" class="nav-link">Locations</a>
+      <a href="catering.html" class="nav-link">Catering</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="catering.html" class="btn btn-outline btn-sm">Catering</a>
+      <a href="menu.html" class="btn btn-primary btn-sm">Order Ice Cream</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <ul>
+    <li><a href="menu.html" class="mobile-link">Menu</a></li>
+    <li><a href="story.html" class="mobile-link">Our Story</a></li>
+    <li><a href="locations.html" class="mobile-link">Locations</a></li>
+    <li><a href="on-the-map.html" class="mobile-link">On the Map</a></li>
+    <li><a href="catering.html" class="mobile-link">Catering</a></li>
+    <li><a href="blog.html" class="mobile-link">Blog</a></li>
+    <li><a href="wholesale.html" class="mobile-link">Wholesale</a></li>
+    <li><a href="work-with-us.html" class="mobile-link">Work With Us</a></li>
+    <li><a href="contact.html" class="mobile-link">Contact</a></li>
+  </ul>
+  <a href="menu.html" class="btn btn-primary btn-full">Order Ice Cream</a>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <p class="eyebrow reveal-up">Our Menu</p>
+      <h1 class="reveal-up">100+ recipes. <span class="script">One happy place.</span></h1>
+      <p class="reveal-up">Flavor availability varies by location — call ahead to make sure your favorite is in the case. All of our ice creams and sorbets are uniquely created using high-quality ingredients, made fresh right here in Central Florida.</p>
+    </div>
+  </section>
+
+  <div class="scallop scallop-top-pink" style="background:var(--cream);"></div>
+
+  <section class="section-padding" style="padding-top:56px;">
+    <div class="container">
+      <div class="flavor-tabs reveal-up">
+        <button type="button" class="flavor-tab active" data-filter="all">All Flavors</button>
+        <button type="button" class="flavor-tab" data-filter="signature">Signature Flavors</button>
+        <button type="button" class="flavor-tab" data-filter="originals">Kelly's Originals</button>
+      </div>
+
+      <div class="flavor-grid" id="flavor-grid">
+        <div class="flavor-card" data-cat="signature">
+          <div class="flavor-card-img"><img src="https://static.wixstatic.com/media/0f6782_c3dd281b8f424cffb03538ded899a832~mv2.png/v1/fill/w_300,h_300,al_c,q_90,enc_avif,quality_auto/ICECREAM.png" alt="Vanilla ice cream icon"></div>
+          <h3>Vanilla</h3>
+        </div>
+        <div class="flavor-card" data-cat="signature">
+          <div class="flavor-card-img"><img src="https://static.wixstatic.com/media/0f6782_9816d8599bb64b61a7e86fee3911387b~mv2.png/v1/fill/w_300,h_300,al_c,q_90,enc_avif,quality_auto/CHOCOLATE.png" alt="Chocolate ice cream icon"></div>
+          <h3>Chocolate</h3>
+        </div>
+        <div class="flavor-card" data-cat="signature">
+          <div class="flavor-card-img"><img src="https://static.wixstatic.com/media/0f6782_50446970ae2243cc8698e14d9bfaf7d0~mv2.png/v1/fill/w_300,h_300,al_c,q_90,enc_avif,quality_auto/STRAWBERRY.png" alt="Strawberry ice cream icon"></div>
+          <h3>Strawberry</h3>
+        </div>
+        <div class="flavor-card" data-cat="signature">
+          <div class="flavor-card-img"><img src="https://static.wixstatic.com/media/0f6782_55f8bf6db3dc4ae785052f4034ee1825~mv2.png/v1/fill/w_300,h_300,al_c,q_90,enc_avif,quality_auto/BUTTERPECAN.png" alt="Butter pecan ice cream icon"></div>
+          <h3>Butter Pecan</h3>
+        </div>
+        <div class="flavor-card" data-cat="signature">
+          <div class="flavor-card-img"><img src="https://static.wixstatic.com/media/0f6782_c3bbb95f751a4fd5918ae90bce995f2f~mv2.png/v1/fill/w_300,h_300,al_c,q_90,enc_avif,quality_auto/MINTCHOC.png" alt="Mint chocolate chip ice cream icon"></div>
+          <h3>Mint Chocolate Chip</h3>
+        </div>
+        <div class="flavor-card" data-cat="signature">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:36px;">☕</div>
+          <h3>Coffee</h3>
+        </div>
+        <div class="flavor-card" data-cat="signature">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:36px;">🥥</div>
+          <h3>Toasted Coconut</h3>
+        </div>
+
+        <div class="flavor-card" data-cat="originals">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:32px;">🍪</div>
+          <h3>Blondie</h3>
+          <p>White chocolate ice cream blended with Golden Oreo® Cookies, Heath bits and white chocolate chips.</p>
+        </div>
+        <div class="flavor-card" data-cat="originals">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:32px;">🍫</div>
+          <h3>Chocolate PB Brownie</h3>
+          <p>Chocolate ice cream layered with Ghirardelli Triple Chocolate Chip brownies and Reese's Peanut Butter sauce.</p>
+        </div>
+        <div class="flavor-card" data-cat="originals">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:32px;">🌶️</div>
+          <h3>Mexican Chocolate</h3>
+          <p>Mexican hot chocolate ice cream spiced with cinnamon, nutmeg + allspice, layered with hot chocolate pieces.</p>
+        </div>
+        <div class="flavor-card" data-cat="originals">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:32px;">🍪</div>
+          <h3>O-Dough</h3>
+          <p>White chocolate ice cream layered with Oreo® Cookies and eggless chocolate chip cookie dough.</p>
+        </div>
+        <div class="flavor-card" data-cat="originals">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:32px;">🎂</div>
+          <h3>Cake Batter N' Sprinkles</h3>
+          <p>Sweet yellow cake batter ice cream layered with rainbow sprinkles.</p>
+        </div>
+        <div class="flavor-card" data-cat="originals">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:32px;">💙</div>
+          <h3>Cookie Monster</h3>
+          <p>Blue velvet cake batter ice cream layered with Oreo® Cookies.</p>
+        </div>
+        <div class="flavor-card" data-cat="originals">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:32px;">🍌</div>
+          <h3>Banana Pudding</h3>
+          <p>Banana cake batter ice cream with marshmallow cream + Nilla® Wafers.</p>
+        </div>
+        <div class="flavor-card" data-cat="originals">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:32px;">🧂</div>
+          <h3>Salted Caramel Cookies + Cream</h3>
+          <p>Salted caramel ice cream layered with Oreo® Cookies + ribbons of salted Ghirardelli caramel.</p>
+        </div>
+        <div class="flavor-card" data-cat="originals">
+          <div class="flavor-card-img" style="display:flex;align-items:center;justify-content:center;font-size:32px;">🧈</div>
+          <h3>Cookie Butter Swirl</h3>
+          <p>Spiced brown sugar ice cream layered with cookie butter.</p>
+        </div>
+      </div>
+
+      <p style="text-align:center; margin-top:20px; font-size:13px; color:var(--brown-3);">OREO® is a trademark of Mondelēz International group, used with permission. Non-dairy options and sorbets change seasonally — call your local shop for current flavors.</p>
+
+      <div class="allergen-banner reveal-up">
+        <div>
+          <strong>Have allergy concerns?</strong>
+          <p>All of our products are made on shared equipment in a shared facility. Kelly's cannot guarantee any flavor is allergen-free — download our allergen guide before you visit.</p>
+        </div>
+        <a href="contact.html" class="btn btn-pink btn-sm" style="flex-shrink:0;">Ask About Allergens</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding" style="background: var(--white); padding-top:0;">
+    <div class="container">
+      <div class="split reverse">
+        <div class="split-text">
+          <p class="eyebrow reveal-up">Beyond the Shop</p>
+          <h2 class="section-title reveal-up">Party packs, cakes & <em>truck-side scoops.</em></h2>
+          <p class="reveal-up">In addition to our shop menu, we offer pre-scooped party packs, custom ice cream cakes, and merch — plus our Ice Cream Truck, which shows up at events across the greater Orlando area almost any day of the week.</p>
+          <div class="hero-actions reveal-up" style="opacity:1;">
+            <a href="catering.html" class="btn btn-primary">Book the Truck <svg width="15" height="15"><use href="#icon-arrow"/></svg></a>
+            <a href="locations.html" class="btn btn-outline"><svg width="15" height="15"><use href="#icon-pin"/></svg> Find a Shop</a>
+          </div>
+        </div>
+        <div class="split-img reveal-up">
+          <img src="https://static.wixstatic.com/media/b6ddd5_a0f1a07fec154083870e110b4c736afc~mv2.jpg/v1/fill/w_700,h_600,al_c,q_85,enc_avif,quality_auto/NOPRICES_WEB_CR%2C%20FC%2C%20OV%20(1).jpg" alt="Kelly's ice cream menu board">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="images/logo-white.png" alt="Kelly's Homemade Ice Cream"><span class="footer-logo-text">Kelly's</span></div>
+        <p>Local, handcrafted ice cream and sorbets made fresh in Central Florida — in our shops, at your events, and in your favorite coffee counters.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/KellysHomemadeIceCream" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.9H16l-.4 2.9h-2.1v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="https://www.instagram.com/kellyshomemadeicecream/" target="_blank" rel="noopener" class="footer-social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 7.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zm5.4-2.4a1.05 1.05 0 1 0 0 2.1 1.05 1.05 0 0 0 0-2.1z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Explore</div>
+        <div class="footer-links"><a href="menu.html">Menu</a><a href="story.html">Our Story</a><a href="locations.html">Locations</a><a href="on-the-map.html">On the Map</a><a href="blog.html">Blog</a></div>
+      </div>
+      <div>
+        <div class="footer-heading">Business</div>
+        <div class="footer-links"><a href="catering.html">Catering</a><a href="wholesale.html">Wholesale Partners</a><a href="shop-parties.html">Parties at Our Shops</a><a href="work-with-us.html">Work With Us</a><a href="donations.html">Donation Requests</a></div>
+      </div>
+      <div>
+        <div class="footer-heading">Contact</div>
+        <div class="footer-links"><a href="contact.html">General Contact</a><a href="flavor-ideas.html">Suggest a Flavor</a><a href="spirit-night.html">Spirit Night Requests</a></div>
+      </div>
+    </div>
+    <p class="footer-safe">Kelly's is a Safe Place for All.</p>
+    <div class="footer-bottom">
+      <span>©2026 Kelly's Homemade Ice Cream, LLC. All rights reserved.</span>
+      <span>Portfolio redesign concept — not the official site.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

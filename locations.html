@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="js/theme.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Locations | Kelly's Homemade Ice Cream</title>
@@ -16,6 +17,12 @@
 <body>
 
 <svg style="display:none" aria-hidden="true">
+  <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+  </symbol>
+  <symbol id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/>
+  </symbol>
   <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
   <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
   <symbol id="icon-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4z"/><path d="M8 2v16M16 6v16"/></symbol>
@@ -35,6 +42,10 @@
     <div class="nav-actions">
       <a href="catering.html" class="btn btn-outline btn-sm">Catering</a>
       <a href="menu.html" class="btn btn-primary btn-sm">Order Ice Cream</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+        <svg class="icon-sun" width="18" height="18"><use href="#icon-sun"/></svg>
+        <svg class="icon-moon" width="18" height="18"><use href="#icon-moon"/></svg>
+      </button>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -53,6 +64,12 @@
     <li><a href="contact.html" class="mobile-link">Contact</a></li>
   </ul>
   <a href="menu.html" class="btn btn-primary btn-full">Order Ice Cream</a>
+  <button class="theme-toggle theme-toggle-mobile" id="theme-toggle-mobile" type="button" aria-label="Toggle light and dark theme">
+    <svg class="icon-sun" width="18" height="18"><use href="#icon-sun"/></svg>
+    <svg class="icon-moon" width="18" height="18"><use href="#icon-moon"/></svg>
+    <span class="theme-label-dark">Light Mode</span>
+    <span class="theme-label-light">Dark Mode</span>
+  </button>
 </div>
 
 <main>
@@ -166,10 +183,10 @@
     </div>
   </section>
 
-  <section class="section-padding" style="background: var(--brown); color: var(--cream); text-align:center;">
+  <section class="section-padding" style="background: var(--chrome); color: var(--chrome-text); text-align:center;">
     <div class="container">
       <p class="eyebrow reveal-up" style="color: var(--pink);">Every Location, On the Map</p>
-      <h2 class="section-title reveal-up" style="color: var(--cream);">See exactly where to find us.</h2>
+      <h2 class="section-title reveal-up" style="color: var(--chrome-text);">See exactly where to find us.</h2>
       <div class="hero-actions reveal-up" style="justify-content:center; opacity:1; margin-top:24px;">
         <a href="on-the-map.html" class="btn btn-pink">View the Full Map <svg width="15" height="15"><use href="#icon-arrow"/></svg></a>
       </div>
